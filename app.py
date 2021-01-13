@@ -1,7 +1,7 @@
 import streamlit as st #for web dev
 from aitextgen import aitextgen #for ai text gen
 
-st.title("AITEXTGEN Web App")
+st.title("TEXTGEN App")
 
 # instantiate the model / download
 ai = aitextgen()
@@ -9,9 +9,9 @@ ai = aitextgen()
 # create a prompt text for the text generation 
 #prompt_text = "Python is awesome"
 prompt_text = st.text_input(label = "Enter your prompt text...",
-            value = "Computer is beautiful")
+            value = "The point is")
 
-with st.spinner("AI is at Work........"):
+with st.spinner("AI is Working~"):
     # text generation
     gpt_text = ai.generate_one(prompt=prompt_text,
             max_length = 100 )
