@@ -32,9 +32,8 @@ if st.button('Generate'):
 
 
 # Initial
-translator = googletrans.Translator()
-
+results = translator.translate(gpt_text, dest='zh-tw').text
 
 # Basic Translate
-results = translator.translate('我覺得今天天氣不好。')
+#results = translator.translate('我覺得今天天氣不好。')
 st.text(results)
