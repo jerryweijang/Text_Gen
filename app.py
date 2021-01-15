@@ -22,19 +22,20 @@ if st.button('Generate'):
             max_length = m_length )
 #st.success("AI Successfully generated the below text ")
     st.success(gpt_text)
-#st.balloons()
-# print ai generated text
-#print(gpt_text)
+    # Initial
+    translator = googletrans.Translator()
 
-#st.text(gpt_text)
+    # Basic Translate
+    #results = translator.translate('我覺得今天天氣不好。')
+    results = translator.translate(gpt_text, dest='zh-tw').text
+    st.text(results)
+    #st.balloons()
+    # print ai generated text
+    #print(gpt_text)
+
+    #st.text(gpt_text)
 
 
 
 
-# Initial
-translator = googletrans.Translator()
 
-# Basic Translate
-#results = translator.translate('我覺得今天天氣不好。')
-results = translator.translate(gpt_text, dest='zh-tw').text
-st.text(results)
