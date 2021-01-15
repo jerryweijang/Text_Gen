@@ -1,7 +1,7 @@
 import streamlit as st #for web dev
 from aitextgen import aitextgen #for ai text gen
 
-st.title("TEXTGEN App")
+st.title("TEXT GEN")
 
 # instantiate the model / download
 ai = aitextgen()
