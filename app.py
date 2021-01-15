@@ -20,7 +20,7 @@ if button:
         gpt_text = ai.generate_one(prompt=prompt_text,
             max_length = m_length )
 #st.success("AI Successfully generated the below text ")
-st.success(gpt_text)
+    st.success(gpt_text)
 #st.balloons()
 # print ai generated text
 #print(gpt_text)
