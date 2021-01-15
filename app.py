@@ -18,8 +18,8 @@ with st.spinner("AI is Working~"):
     gpt_text = ai.generate_one(prompt=prompt_text,
             max_length = m_length )
 st.success("AI Successfully generated the below text ")
-st.balloons()
+#st.balloons()
 # print ai generated text
-print(gpt_text)
+#print(gpt_text)
 
 st.text(gpt_text)
