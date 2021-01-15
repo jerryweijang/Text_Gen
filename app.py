@@ -11,10 +11,9 @@ col1,col2 = st.beta_columns(2)
 with col1:
     prompt_text = st.text_input(label = "Enter your prompt text...", value = "The point is")
 with col2:
-    m_length = st.number_input("Length", min_value=1, step=1)     
-    button = st.button('Generate')
+    m_length = st.number_input("Length", min_value=1, step=1)        
 
-if button:
+if st.button('Generate'):
     with st.spinner("AI is Working~"):
         # text generation
         gpt_text = ai.generate_one(prompt=prompt_text,
