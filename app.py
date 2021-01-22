@@ -20,7 +20,7 @@ with col2:
 
 if st.button('Generate'):
     with st.spinner("AI is Working~"):
-        e_results = translator.translate(prompt_text, dest='us').text
+        e_results = translator.translate(prompt_text, dest='en').text
         gpt_text = ai.generate_one(prompt=e_results,
             max_length = m_length )
 #st.success("AI Successfully generated the below text ")
